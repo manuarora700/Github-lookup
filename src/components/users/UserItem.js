@@ -2,14 +2,14 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
-const UserItem = ({ user: { login, avatar_url, html_url } }) => {
+const UserItem = ({ user: { login, avatar_url, html_url, bio } }) => {
   return (
-    <div className="card text-center">
+    <div className="card-custom text-center">
       <img
         src={avatar_url}
         className="round-img"
         alt="User"
-        style={{ width: "60px" }}
+        style={{ width: "120px", marginTop: "10px" }}
       />
       <h3>{login}</h3>
       <div>
@@ -18,6 +18,28 @@ const UserItem = ({ user: { login, avatar_url, html_url } }) => {
         </Link>
       </div>
     </div>
+    // <div className="card-custom hover">
+    //   <div
+    //     className="card-custom-img"
+    //     style={{ backgroundImage: `url(${avatar_url})` }}
+    //   >
+    //     <div className="overlay">
+    //       <div className="overlay-content">
+    //         <Link className="hover" to={`/user/${login}`}>
+    //           View Details
+    //         </Link>
+    //       </div>
+    //     </div>
+    //   </div>
+
+    //   <div className="card-custom-content">
+    //     <a href="#!">
+    //       <h2>{login}</h2>
+    //       <p>{bio}</p>
+    //       {console.log(bio)}
+    //     </a>
+    //   </div>
+    // </div>
   );
 };
 

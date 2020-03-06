@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Navbar from "./components/layout/Navbar";
 import User from "./components/users/User";
 import Home from "./components/pages/Home";
+import Header from "./components/layout/Header";
 import Footer from "./components/layout/Footer";
 import Alert from "./components/layout/Alert";
 import About from "./components/pages/About";
@@ -20,6 +21,7 @@ const App = () => {
         <Router>
           <div className="App">
             <Navbar title="Github Lookup" icon="fab fa-github" />
+            <Header />
             <div className="container">
               <Alert />
               <Switch>

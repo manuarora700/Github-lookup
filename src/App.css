@@ -619,3 +619,16 @@ body {
   text-overflow: ellipsis;
   color: rgba(32, 41, 28, 0.8);
 }
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(48, 48, 48);
+  color: white;
+  text-align: center;
+}
+.footer a {
+  color: rgb(145, 134, 134);
+}

@@ -88,7 +88,10 @@ class User extends Component {
               <li>
                 {blog && (
                   <Fragment>
-                    <strong>Website: </strong> {blog}
+                    <strong>Website: </strong>
+                    <a href={`http://${blog}`} target="__blank">
+                      {blog}
+                    </a>
                   </Fragment>
                 )}
               </li>

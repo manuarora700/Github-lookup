@@ -33,7 +33,7 @@ const Navbar = ({ icon, title }) => {
           About
         </Link>
         <a
-          href="https://www.github.com/manuarora700/GitGub-lookup"
+          href="https://www.github.com/manuarora700/Github-lookup"
           className="nav-item"
           active-color="rebeccapurple left"
         >
